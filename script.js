@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
+window.onload function() {
     const loginForm = document.getElementById('loginForm');  // Fix: Define loginForm
     const existingButton = document.getElementById('existing');
     
