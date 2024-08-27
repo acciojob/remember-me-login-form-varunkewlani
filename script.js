@@ -1,5 +1,5 @@
 const submit = document.getElementById("submit");
-    const checkbox = document.getElementById("checkbox");
+const checkbox = document.getElementById("checkbox");
 
     submit.addEventListener("click", (e) => {
         e.preventDefault();
@@ -19,7 +19,7 @@ const submit = document.getElementById("submit");
 
         // Show the "Login as existing user" button if user details are stored
         if (localStorage.getItem("username") && localStorage.getItem("password")) {
-            if (!document.getElementById("existing")) {
+            
                 const existingUserButton = document.createElement("button");
                 existingUserButton.id = "existing";
                 existingUserButton.textContent = "Login as existing user";
@@ -27,7 +27,7 @@ const submit = document.getElementById("submit");
                     alert(`Logged in as ${localStorage.getItem("username")}`);
                 });
                 document.body.appendChild(existingUserButton);
-            }
+            
         }
     });
 
