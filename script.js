@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
+    const loginForm = document.getElementById('loginForm');  // Fix: Define loginForm
     const existingButton = document.getElementById('existing');
     
     // Check if username and password are stored in local storage
@@ -9,15 +10,14 @@ document.addEventListener("DOMContentLoaded", function() {
         existingButton.style.display = 'block';  // Show the "Login as existing user" button
     }
 
-    loginForm.addEventListener('submit', function(event) 
-	{
+    loginForm.addEventListener('submit', function(event) {
         event.preventDefault();  // Prevent form submission
 
         const username = document.getElementById('username').value;
         const password = document.getElementById('password').value;
         const rememberMe = document.getElementById('checkbox').checked;
 
-        if (rememberMe) {
+        if (rememberMe) {  // Fix: Use rememberMe directly
             // Save username and password in local storage
             localStorage.setItem('username', username);
             localStorage.setItem('password', password);
