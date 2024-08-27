@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const loginForm = document.getElementById('loginForm');
     const existingButton = document.getElementById('existing');
     
     // Check if username and password are stored in local storage
@@ -10,7 +9,8 @@ document.addEventListener("DOMContentLoaded", function() {
         existingButton.style.display = 'block';  // Show the "Login as existing user" button
     }
 
-    loginForm.addEventListener('submit', function(event) {
+    loginForm.addEventListener('submit', function(event) 
+	{
         event.preventDefault();  // Prevent form submission
 
         const username = document.getElementById('username').value;
