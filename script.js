@@ -6,7 +6,7 @@ const submit = document.getElementById("submit");
         const username = document.getElementById("username").value;
         const password = document.getElementById("password").value;
 
-        alert(`Logged in as ${username}.`);
+        alert(`Logged in as ${username}`);
 
       
         if (checkbox.checked) {
@@ -24,7 +24,7 @@ const submit = document.getElementById("submit");
                 existingUserButton.id = "existing";
                 existingUserButton.textContent = "Login as existing user";
                 existingUserButton.addEventListener("click", () => {
-                    alert(`Logged in as ${localStorage.getItem("username")}.`);
+                    alert(`Logged in as ${localStorage.getItem("username")}`);
                 });
                 document.body.appendChild(existingUserButton);
             }
