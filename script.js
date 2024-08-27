@@ -17,7 +17,9 @@ const checkbox = document.getElementById("checkbox");
             localStorage.removeItem("password");
         }
 
-        // Show the "Login as existing user" button if user details are stored
+       
+    });
+ // Show the "Login as existing user" button if user details are stored
         if (localStorage.getItem("username") && localStorage.getItem("password")) {
             
                 const existingUserButton = document.createElement("button");
@@ -29,6 +31,3 @@ const checkbox = document.getElementById("checkbox");
                 document.body.appendChild(existingUserButton);
             
         }
-    });
-
-    // Show the "Login as existing user" button if user details are already stored
