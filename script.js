@@ -22,6 +22,6 @@ submit.addEventListener("click", (e)=>
 })
 if(localStorage("user") && localStorage("pass"))
 {
-	body.innerHTML+= `<button id="existing">Login as existing user.</button>`
+	document.body.innerHTML+= `<button id="existing">Login as existing user.</button>`
 	
 }
